@@ -12,7 +12,7 @@ function printNumbers(numbers) {
   }
   
 // Q: Given an array of numbers, what is the time complexity of this function?
-// ANSWER:O(1)
+// ANSWER:O(n)
 
 // Q: What is the space complexity?
 // ANSWER:O(1)
@@ -47,7 +47,7 @@ function findFourth(numbers) {
 
 // Q: Could you come up with a solution that has a better time complexity? If so, write out that solution and note the time complexity. If not, why not?
 // ANSWER:
-console.log(numbers[3])
+// No.  This one is already O(1).  
 
 
 // 3) -------------------------------------------------------
@@ -60,7 +60,7 @@ function printA() {
 // ANSWER:O(1)
 
 // Q: What is the space complexity of this function?
-// ANSWER:O(n)
+// ANSWER:O(1)
 
 // 4) -------------------------------------------------------
 function printB(number) {
@@ -72,7 +72,7 @@ function printB(number) {
 // ANSWER:O(n)
 
 // Q: What is the space complexity of this function?
-// ANSWER:O(n)
+// ANSWER:O(1)
 
 
 
@@ -88,7 +88,7 @@ function printC(num, arr) {
 // ANSWER:O(n2)
 
 // Q: What is the space complexity of this function?
-// ANSWER:O(n2)
+// ANSWER:O(1)
 
 
 // 6) -------------------------------------------------------
@@ -103,7 +103,7 @@ function nested(numbers) {
 // ANSWER:O(n2)
 
 // Q: What is the space complexity of this function?
-// ANSWER:O(n2)
+// ANSWER:O(1)
 
 
 
@@ -126,10 +126,10 @@ let newNumbersB = numbers.map((num) => {
   return num * 3
 })
 // Q: What is the time complexity of the map higher-order function?
-// ANSWER:O(n2)
+// ANSWER:O(n)
 
 // Q: What is the space complexity of the map higher-order function?
-// ANSWER:O(n2)
+// ANSWER:O(n)
 
 
 
@@ -144,7 +144,7 @@ function removeNum() {
     numbers.splice(3,1)
 }
 // Q: What is the time complexity of the function?
-// ANSWER:O(1)
+// ANSWER:O(n)
 
 
 // 10) -------------------------------------------------------
@@ -152,7 +152,7 @@ function insertNum() {
     numbers.splice(3, 0, 19)
 }
 // Q: What is the time complexity of the function?
-// ANSWER:O(1)
+// ANSWER:O(n)
 
 
 // 11) -------------------------------------------------------
@@ -196,7 +196,7 @@ function arrInception(parentArr) {
     }
   }
   // Q: What is the space complexity of this function?
-  // ANSWER:O(n^n)
+  // ANSWER:O(1)
   
   
 // 14) You are challenged to find the squared value of each number in an array. This is not the best solution, but it is what you come up with anyway...
@@ -214,15 +214,12 @@ function getNumbersSquared(numbers) {
 }
 
 // Q: What is the space complexity of this function?
-// ANSWER:O(n2)
+// ANSWER:O(n)
 
 
 // Q: Is it possible to improve this function's space complexity? If it is, write a new function below.
 // ANSWER:
-function getNumbersSquared(numbers){
-  let squared = numbers.ForEach(Math.pow(2));
-  return squared
-}
+
 
 // 15) Here are two functions that you came up with to count how many of each letter is in a given string and return an object with the individual counts: 
 
